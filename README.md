@@ -1,2 +1,1 @@
-# Kazi_List is simply similar to C
-raiglist
+# Kazi_List is simply similar to Craiglist
