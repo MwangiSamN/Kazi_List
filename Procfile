@@ -1,0 +1,1 @@
+web: gunicorn kazi_list.wsgi

@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h2 style="text-align: center;">{{ search | title }}</h2>
+            <div class="row">
+
+            {% for post in final_postings %}
+
+                <div class="col s4">
+                    <div class="card">
+                        <div class="card-image">
+                            <a href="{{post.1}}"><img src="{{ post.3 }}" alt=""></a>
+                        </div>
+                        <div class="card-content">
+                            <p>{{post.0}}</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="{{post.1}}">View listing: Price {{post.2}}</a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+
+<footer class="page-footer blue-grey darken-4">
+          <div class="footer-copyright">
+            <div class="container" align="center">
+            © 2020 Powered by Sam.
+            <a class="grey-text text-lighten-4 right" href="#!"></a>
+            </div>
+          </div>
+        </footer>
+
+
+
+{% endblock content %}
